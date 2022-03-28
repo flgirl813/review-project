@@ -14,8 +14,8 @@ let passwordLength = 12;
 let password = "";
 function addNewPassword() {
   for (let i = 0; i <= passwordLength; i++) {
-    let randomNumber = Math.floor(Math.random() * chars.length);
-    password += chars.substring(randomNumber, randomNumber + 1);
+    let randomPassword = Math.floor(Math.random() * chars.length);
+    password += chars.substring(randomPassword, randomPassword + 1);
   }
   return password;
 }
